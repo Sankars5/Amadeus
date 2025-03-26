@@ -19,3 +19,5 @@ Compile and Run:
       ```bash
    ./Avg_salary.sh Employees.xml
    ./Avg_Salary.sh Employees.json
+
+Note: To use G++ command , MinGW should be installed.
