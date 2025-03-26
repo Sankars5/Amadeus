@@ -10,6 +10,10 @@ INPUT_FILE=$1
 
 # Compiling the C++ program
 g++ -std=c++11 -o Emp_Avg_Salary Emp_Avg_Salary.cpp -lnlohmann_json -ltinyxml2
+if [ $? -ne 0 ]; then
+  echo "Compilation failed. Please check the code."
+  exit 1
+fi
 
 # Run the C++ program with the input file
-./EMP_Avg_Salary $INPUT_FILE
+./Emp_Avg_Salary $INPUT_FILE
