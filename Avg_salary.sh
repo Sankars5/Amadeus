@@ -16,4 +16,4 @@ if [ $? -ne 0 ]; then
 fi
 
 # Run the C++ program with the input file
-./Emp_Avg_Salary $INPUT_FILE
+./Emp_Avg_Salary "$INPUT_FILE"
