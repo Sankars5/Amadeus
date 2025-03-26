@@ -9,7 +9,7 @@ fi
 INPUT_FILE=$1
 
 # Compile the C++ program
-g++ -std=c++11 -o Employee_Avg_Salary Employee_Avg_Salary.cpp -lnlohmann_json -ltinyxml2
+g++ -std=c++11 -o Emp_Avg_Salary Emp_Avg_Salary.cpp -lnlohmann_json -ltinyxml2
 
 # Run the C++ program with the provided input file
-./employee_util $INPUT_FILE
+./Avg_salary $INPUT_FILE
