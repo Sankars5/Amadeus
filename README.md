@@ -15,3 +15,8 @@ Compile and Run:
    ```bash
    git clone https://github.com/Sankars5/Amadeus.git
    cd Amadeus
+2. compile the program 
+   g++ -std=c++11 -o Emp_Avg_Salary Emp_Avg_Salary.cpp -lnlohmann_json -ltinyxml2
+3. Run the program
+   ./.sh tests/Employees.xml
+   ./.sh tests/Employees.json
