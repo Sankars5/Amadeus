@@ -100,7 +100,7 @@ int main(int argc, char* argv[]) {
     } else if (filename.substr(filename.find_last_of(".") + 1) == "xml") {
         employees = parseXML(filename);
     } else {
-        cerr << "Unsupported file format!" << endl;
+        cerr << "Unsupported file format. File format expected is either json or xml" << endl;
         return 1;
     }
 
