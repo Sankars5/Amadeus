@@ -12,4 +12,4 @@ INPUT_FILE=$1
 g++ -std=c++11 -o Emp_Avg_Salary Emp_Avg_Salary.cpp -lnlohmann_json -ltinyxml2
 
 # Run the C++ program with the input file
-./Avg_salary $INPUT_FILE
+./EMP_Avg_Salary $INPUT_FILE
