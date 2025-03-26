@@ -14,4 +14,4 @@ Compile and Run:
 1. Clone the repository:
    ```bash
    git clone https://github.com/Sankars5/Amadeus.git
-   cd employee-utility
+   cd Amadeus
