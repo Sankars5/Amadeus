@@ -13,8 +13,8 @@ using namespace std;
 using namespace tinyxml2;
 
 struct Employee {
-    int id;
     string name;
+    int id;
     string department;
     double salary;
 };
@@ -27,8 +27,8 @@ vector<Employee> parseJSON(const string& filename) {
     vector<Employee> employees;
     for (const auto& item : j["employees"]) {
         employees.push_back({
-            item["id"].get<int>(),
             item["name"].get<string>(),
+            item["id"].get<int>(),
             item["department"].get<string>(),
             item["salary"].get<double>()
         });
@@ -47,8 +47,8 @@ vector<Employee> parseXML(const string& filename) {
     
     while (employeeElement) {
         Employee emp;
-        emp.id = atoi(employeeElement->FirstChildElement("id")->GetText());
         emp.name = employeeElement->FirstChildElement("name")->GetText();
+        emp.id = atoi(employeeElement->FirstChildElement("id")->GetText());
         emp.department = employeeElement->FirstChildElement("department")->GetText();
         emp.salary = atof(employeeElement->FirstChildElement("salary")->GetText());
         
@@ -77,7 +77,7 @@ Employee findHighestPaidEmployee(const vector<Employee>& employees) {
 // Function to print employee list
 void printEmployees(const vector<Employee>& employees) {
     for (const auto& emp : employees) {
-        cout << "ID: " << emp.id << ", Name: " << emp.name << ", Department: " << emp.department << ", Salary: " << emp.salary << endl;
+         cout <<  "Name: " << emp.name << ", ID: " << emp.id << ", Department: " << emp.department << ", Salary: " << emp.salary << endl;
     }
 }
 
@@ -113,7 +113,7 @@ int main(int argc, char* argv[]) {
     // Find and print the highest paid employee
     Employee highestPaid = findHighestPaidEmployee(employees);
     cout << "Highest Paid Employee: " << endl;
-    cout << "ID: " << highestPaid.id << ", Name: " << highestPaid.name << ", Department: " << highestPaid.department << ", Salary: " << highestPaid.salary << endl;
+    cout << " Name: " << highestPaid.name << ", ID: " << highestPaid.id << ", Department: " << highestPaid.department << ", Salary: " << highestPaid.salary << endl;
 
     // Sort and print the employee list
     sortEmployeesByID(employees);
