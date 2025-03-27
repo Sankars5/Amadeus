@@ -1,8 +1,11 @@
-# Amadeus
-Developer Test
+
+**Developer Test - Amadeus**
 
 Employee Average salary:
-This is a C++ program for reading, parsing employee data from XML and JSON files, calculating the average salary, identifying the highest paid employee, and sorting employees by ID.
+(Emp_Avg_salary.cpp)
+ C++ program for reading input, parsing employee data from XML and JSON files, calculating the average salary, identifying the highest paid employee, and sorting employees by ID.
+(Avg_salary.sh)
+ Bash script to compile and run the C++ program
 
 Requeirements :
 C++11 or higher standard version is needed, else few features may not be working.
