@@ -2,9 +2,9 @@
 #include <vector>
 #include <fstream>
 #include <string>
-//#include <nlohmann/json.hpp>
-#include <json.hpp>
-#include <tinyxml2.h>
+//#include <nlohmann/json.hpp> 
+#include "json.hpp"  //Manually downloaded json.jpp
+#include "tinyxml2.h"  //Manually downloaded 
 #include <algorithm>
 
 using json = nlohmann::json;
@@ -12,8 +12,8 @@ using namespace std;
 using namespace tinyxml2;
 
 struct Employee {
-    string name;
     int id;
+    string name;
     string department;
     double salary;
 };
