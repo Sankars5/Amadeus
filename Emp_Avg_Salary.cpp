@@ -3,8 +3,8 @@
 #include <fstream>
 #include <string>
 //#include <nlohmann/json.hpp> 
-#include "json.hpp"  //Manually downloaded json.jpp
-#include "tinyxml2.h"  //Manually downloaded 
+#include "json.hpp"  //Manually downloaded json library
+#include "tinyxml2.h"  //Manually downloaded  XMl library
 #include <algorithm>
 
 using json = nlohmann::json;
