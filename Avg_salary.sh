@@ -1,19 +1,26 @@
 #!/bin/bash
 
-# Checking if input file is available
+# Checking if input file is provided
 if [ -z "$1" ]; then
-  echo "Usage: ./Avg_salary.sh <input-file>"
+  echo "Use the below format to run the program: 
+        ./Avg_salary.sh <input-file>"
   exit 1
 fi
 
 INPUT_FILE=$1
 
 # Compiling the C++ program
-g++ -std=c++11 -o Emp_Avg_Salary Emp_Avg_Salary.cpp -lnlohmann_json -ltinyxml2
+echo "Compiling Emp_Avg_Salary.cpp..."
+g++ -std=c++11 Emp_Avg_Salary.cpp tinyxml2.cpp -o Emp_Avg_Salary
+
+# Check if compilation was successful
 if [ $? -ne 0 ]; then
-  echo "Compilation failed. Please check the code."
+  echo "Compilation failed. Exiting..."
   exit 1
 fi
 
-# Run the C++ program with the input file
+echo "Compilation successful."
+
+# Run the compiled program with the input file
+echo "Running the program..."
 ./Emp_Avg_Salary "$INPUT_FILE"
