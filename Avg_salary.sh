@@ -9,9 +9,12 @@ fi
 
 INPUT_FILE=$1
 
-# Compiling the C++ program
+# Compiling the C++ program (Manually downloaded library in same directory)
 echo "Compiling Emp_Avg_Salary.cpp..."
 g++ -std=c++11 Emp_Avg_Salary.cpp tinyxml2.cpp -o Emp_Avg_Salary
+
+#Compiling  the C++ program if libraries are inlcuded 
+#g++ -std=c++11 -o Emp_Avg_Salary Emp_Avg_Salary.cpp -lnlohmann_json -ltinyxml2
 
 # Check if compilation was successful
 if [ $? -ne 0 ]; then
