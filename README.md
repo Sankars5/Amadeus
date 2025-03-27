@@ -17,8 +17,12 @@ Compile and Run:
    cd Amadeus
 2. compile and run the program
       ```bash
+   ./Avg_Salary.sh
+   ./Avg_Salary.sh Employees.txt
    ./Avg_salary.sh Employees.xml
    ./Avg_Salary.sh Employees.json
+ 
+   
 
 Note: json.hpp and tinyxml2.h library has to be downloaded and added in the same directory where the .cpp and .sh files are present.
 
